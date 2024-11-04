@@ -6,7 +6,7 @@
 /* a positive-integer value stack, with no size limit */
 typedef struct Stack
 {
-	LinkedList Head;
+	LinkedList* head;
 
 } Stack;
 
