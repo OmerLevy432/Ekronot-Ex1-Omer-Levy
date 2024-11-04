@@ -29,6 +29,7 @@ void cleanQueue(Queue* q)
 
 	// frees the memory and deletes the pointer
 	delete q->data;
+	q = nullptr;
 	delete q;
 }
 

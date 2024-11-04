@@ -1,12 +1,15 @@
 #pragma once
+#include <iostream>
+
 
 typedef struct LinkedList
 {
-	int value;
+	unsigned int value;
 	LinkedList* next;
 
 } LinkedList;
 
 
 // function prototypes
-void initLinkedList(LinkedList* list, int value);
+void initLinkedList(LinkedList* list, unsigned int value);
+void insertFirstNode(LinkedList** list, unsigned int value);
