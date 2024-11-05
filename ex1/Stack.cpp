@@ -49,3 +49,34 @@ void push(Stack* s, unsigned int element)
 	insertFirstNode(pointerToStackHead, element);
 }
 
+/*
+input: the stack
+output: the element at the top
+pops an element from the top of the stack
+*/
+int pop(Stack* s)
+{
+	if (isEmpty(s))
+	{
+		return EMPTY;
+	}
+
+	// gets the element from the top of the stack
+	int element = s->head->value;
+
+	// removes the element from the top
+	s->head = s->head->next;
+
+	return element;
+}
+
+/*
+input: the queue
+output: true if its empty else false
+checks if the queue is empty
+*/
+bool isEmpty(Stack* s)
+{
+	return s->head == nullptr;
+}
+

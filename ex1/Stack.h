@@ -1,5 +1,6 @@
 #ifndef STACK_H
 #define STACK_H
+#define EMPTY -1
 
 #include "LinkedList.h"
 
