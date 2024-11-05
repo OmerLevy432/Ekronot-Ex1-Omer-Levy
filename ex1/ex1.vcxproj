@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Downloads\Part1Tester.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Part2Tester.cpp" />
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Queue.cpp" />
