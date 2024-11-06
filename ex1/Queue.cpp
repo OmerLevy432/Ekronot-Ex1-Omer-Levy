@@ -27,10 +27,8 @@ void cleanQueue(Queue* q)
 		q->data[i] = 0;
 	}
 
-	// frees the memory and deletes the pointer
-	delete q->data;
-	q = nullptr;
-	delete q;
+	// resets the insert index
+	q->index = 0;
 }
 
 /*

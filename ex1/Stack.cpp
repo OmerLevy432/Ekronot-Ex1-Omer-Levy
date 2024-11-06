@@ -30,9 +30,8 @@ void cleanStack(Stack* s)
 		delete prev;
 	}
 
-	// deletes the pointer
-	s = nullptr;
-	delete s;
+	// resets the pointer to null
+	s->head = nullptr;
 }
 
 /*
