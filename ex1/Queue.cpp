@@ -62,7 +62,7 @@ int dequeue(Queue* q)
 	int i = 0;
 
 	// shifts all the elements in the queue array to the right
-	for (i = 0; i < q->index; i++)
+	for (i = 0; i < q->index - 1; i++)
 	{
 		q->data[i] = q->data[i + 1];
 	}

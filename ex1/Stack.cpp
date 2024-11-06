@@ -61,10 +61,12 @@ int pop(Stack* s)
 	}
 
 	// gets the element from the top of the stack
-	int element = s->head->value;
+	LinkedList* elementNode = s->head;
+	int element = elementNode->value;
 
-	// removes the element from the top
+	// removes the element from the top and deletes it
 	s->head = s->head->next;
+	delete elementNode;
 
 	return element;
 }
